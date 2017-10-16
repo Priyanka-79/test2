@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title></title>
+	
+
+	<style type="text/css">
+		#list {
+			list-style-type: none;
+			margin: 50px;
+			padding: 0;
+			background-color: lightblue;
+			height: 50px;
+		}
+		li{
+			display: inline;
+			padding: 100px;
+
+		}
+		a{
+			text-decoration: none;
+			font-size:20px;
+			color: black;
+		}
+	</style>
+</head>
+<body  >
+<nav>
+	<ul id="list">
+		<li><a href="#!/">Menu</a></li>
+		<li><a href="#!html">HTML</a></li>
+		<li><a href="#!css">CSS</a></li>
+		<li><a href="#!js">JAVASCRIPT</a></li>
+	</ul>
+</nav>
+<div ng-view>
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+<script type="text/javascript" src='routing.js'></script>
+
+</body>
+</html>
